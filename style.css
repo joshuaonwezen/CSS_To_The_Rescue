@@ -1,0 +1,146 @@
+body{
+    font-family: "Verdana", Geneva, sans-serif;
+}
+.flex-box{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+header{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+        -ms-flex-direction:column;
+            flex-direction:column;
+}
+#header{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background:#849CA4;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+        -ms-flex-align:center;
+            align-items:center;
+}
+#header > nav{
+    margin-left: -100px;
+}
+#header > p{
+    color:#FFFFFF;
+}
+#header > p > em{
+    font-weight:bold;
+}
+
+main{
+    margin-left:50px;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+        -ms-flex-direction:column;
+            flex-direction:column;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+svg {
+    max-width: 12px;
+    max-height: 12px;
+    fill:#FFFFFF;
+}
+
+.photo-album-images{
+    margin-left:-40px;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+}
+#photo-albums > figure{
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:row;
+        -ms-flex-direction:row;
+            flex-direction:row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+#password > form > fieldset{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width:200px;
+}
+#password > form > fieldset > label{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    margin-top:10px;
+}
+#password > form > fieldset > label > input{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    width:170px;
+}
+#password > form > fieldset > button{
+    margin-top:20px;
+    border:none;
+    background:#849CA4;
+    color:#FFFFFF;
+    height:30px;
+    width:170px;
+}
+footer{
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    background-color:#697C83;
+}
+footer > address{
+    color:#FFFFFF;
+}
+article{
+    max-width:700px;
+}
+img{
+    max-width:300px;
+    max-height:300px;
+}
+
+
+@media all and (max-width: 500px) {
+}
