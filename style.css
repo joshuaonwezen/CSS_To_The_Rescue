@@ -142,5 +142,18 @@ img{
 }
 
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 800px) {
+    .flex-box{
+        display:block;
+    }
+    footer{
+        align-items: flex-start;
+    }
+    footer > address > pre{
+        margin-left:-270px;
+    }
+    .photo-album-images{
+        flex-direction:column;
+    }
+    
 }
