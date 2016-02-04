@@ -1,2 +1,2 @@
 # CSS-to-the-Rescue
-HTML voor de CSS to the Rescue opdracht
+#http://onwezen.github.io/CSS_To_The_Rescue/
