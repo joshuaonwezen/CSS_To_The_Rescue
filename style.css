@@ -1,5 +1,15 @@
 body{
     font-family: "Verdana", Geneva, sans-serif;
+    margin: 0;
+}
+
+.amp {
+    font-family: Baskerville, "Goudy Old Style", Garamond, Palatino, serif; 
+    font-style: italic; }
+
+h1{
+    font-family: Ampersand, Helvetica, sans-serif; 
+    font-size: 180%;
 }
 .flex-box{
     display: -webkit-box;
@@ -29,8 +39,13 @@ header{
         -ms-flex-align:center;
             align-items:center;
 }
+ul{
+    margin: 0;
+    padding:0;
+}
 #header > nav{
-    margin-left: -100px;
+    display:flex;
+    align-content:flex-start;
 }
 #header > p{
     color:#FFFFFF;
@@ -40,7 +55,7 @@ header{
 }
 
 main{
-    margin-left:50px;
+    padding:5%;
     -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
     -webkit-flex-direction:column;
@@ -149,8 +164,13 @@ img{
     footer{
         align-items: flex-start;
     }
+    footer > address{
+        margin:0;
+        padding:0;
+    }
     footer > address > pre{
-        margin-left:-270px;
+        margin:0;
+        padding:0;
     }
     .photo-album-images{
         flex-direction:column;
