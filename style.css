@@ -181,11 +181,6 @@ li > a:hover{
     border: 2px solid #D4D4D4;
     background-color: #e5eecc;
 }
-#profile-picture > section{
-    display:flex;
-    flex-direction:column;
-    margin: auto;   
-}
 #profile-picture > section > header{
     flex:none;
 }
@@ -195,12 +190,18 @@ li > a:hover{
 }
 #filters:target{
     display:flex;
-    animation: highlight 1s ease;  
-    transform: translateX(20px); 
-    box-shadow: inset 0px 0px 0 2000px rgba(0,0,0,0.5); 
-    width:40%;
+    animation: highlight 1s ease;
+    transform: translateX(20px);
+    box-shadow: inset 0px 0px 0 2000px rgba(0,0,0,0.5);
+    width: 165px;
+    display:flex;
+    flex-direction:column;
+    margin: auto;
 }
 
+h3{
+    text-align:center;
+}
 @media all and (min-width: 800px) {
     .flex-box{
         display: -webkit-box;
