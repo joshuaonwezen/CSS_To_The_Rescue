@@ -45,7 +45,7 @@
 							Find friends
 						</a>
 					</li>
-					<li><a href="#">Another list item</a></li>
+					<li><a href="#profile-picture-overlay">Profile Picture</a></li>
 					<li><a href="#">Another list item</a></li>
 					<li><a href="#">Another list item</a></li>
 					<li><a href="#">Another list item</a></li>
@@ -116,7 +116,14 @@
                         </section>
                         <a role="button" href="#save">Save</a>
                     </article> 
-
+                    <section id='profile-picture-overlay'>
+                        <a href="#" role="close">X</a>
+                        <figure class="current-profile-picture">
+                            <img class="profile-picture" src="images/profile-picture.jpg">
+                        </figure>
+                        <input type="checkbox" id="picture-select" />
+                        <label for="picture-select">Hide?</label>
+                    </section>
 
                     <article id="password">
                         <header>
@@ -147,7 +154,7 @@
 				<header>
 					<h2>Your photo albums</h2>
 				</header>
-                            <div class="photo-album-images">
+                            <aside class="photo-album-images">
 				<figure>
 					<img src="images/image-01.jpg" alt="Photoalbum of Summer 2015">
 					<figcaption>
@@ -161,15 +168,17 @@
 						Winter 2015
 					</figcaption>
 				</figure>
-                            </div>
+                            </aside>
 			</article>
 			<!-- Dit mag je in week 3 uit de comments halen. -->
-				<!-- <article id="find-friends">
-					<header>
-						<h2>Find friends</h2>
-						<a href="#password">
+				<article id="find-friends">
+                                    <a href="#password">
 													<svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="612" height="612" viewBox="0 0 612 612" xml:space="preserve"><path d="M423.2 438c-3.8 0-7.5-1.4-10.4-4.3L178.4 199.2c-5.7-5.7-5.7-15.1 0-20.8 5.8-5.8 15.1-5.8 20.8 0l234.5 234.5c5.8 5.8 5.8 15.1 0 20.8C430.8 436.5 427 438 423.2 438zM188.8 438c-3.8 0-7.5-1.4-10.4-4.3 -5.7-5.7-5.7-15.1 0-20.8l234.4-234.5c5.8-5.8 15.1-5.8 20.8 0 5.8 5.7 5.8 15.1 0 20.8l-234.4 234.5C196.3 436.5 192.5 438 188.8 438z"/><path d="M306 612v-14.7l0 14.7c-168.7 0-306-137.3-306-306C0 137.3 137.3 0 306 0c168.7 0 306 137.3 306 306C612 474.7 474.7 612 306 612zM306 29.4c-152.5 0-276.6 124.1-276.6 276.6 0 152.5 124.1 276.6 276.6 276.6h0c152.5 0 276.5-124.1 276.5-276.6C582.6 153.5 458.5 29.4 306 29.4z"/></svg>
 												</a>
+					<header>
+                                            
+						<h2>Find friends</h2>
+						
 					</header>
 									<figure class="effect-01">
 						<img class="profile-picture " src="images/profile-picture-08.jpg">
@@ -204,7 +213,7 @@
 											<figcaption>Lighten</figcaption>
 					</figure>
 				</article>
-				<div title="Load more articles" class="loader">Loading…</div> -->
+				<div title="Load more articles" class="loader">Loading…</div>   
 		</main>
                 </div>
 		<footer>
@@ -216,23 +225,24 @@
 					020 599 5555
 				</pre>
 			</address>
-				<ul>
-					<li><a href="">About</a></li>
-					<li><a href="">FAQ</a></li>
-					<li><a href="">Contact</a></li>
-					<li><a href="">Legal</a></li>
-					<li><a href="">Terms & Conditions</a></li>
-					<li><a href="">Privacy</a></li>
-				</ul>
-			<ul>
-				<li><a href="">Status</a></li>
-				<li><a href="">API</a></li>
-				<li><a href="">Training</a></li>
-				<li><a href="">Shop</a></li>
-				<li><a href="">Blog</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Pricing</a></li>
-			</ul>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Legal</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Privacy</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Status</a></li>
+                        <li><a href="">API</a></li>
+                        <li><a href="">Training</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Pricing</a></li>
+                    </ul>
 		</footer>
+                
 	</body>
 </html>
