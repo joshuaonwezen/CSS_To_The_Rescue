@@ -3,6 +3,7 @@ body{
     margin: 0;
     max-width: 100%;
     background: hsl(20, 40%, 90%);
+    background-image: -webkit-linear-gradient(0deg, #84a49c 11px, transparent 0), -webkit-linear-gradient(0deg, rgb(68, 187, 160) 23px, transparent 0), -webkit-linear-gradient(0deg, rgb(188, 188, 188) 41px, transparent 0);
     background-image: linear-gradient(90deg, #84a49c 11px, transparent 0),          linear-gradient(90deg, rgb(68, 187, 160) 23px, transparent 0),          linear-gradient(90deg, rgb(188, 188, 188) 41px, transparent 0);
     background-size: 41px 100%, 61px 100%, 83px 100%;
 }
@@ -213,6 +214,7 @@ li > a{
 }
 li > a:hover{
     opacity:0.5;
+    filter: alpha(opacity=50);
     cursor:pointer;    
 }
 
@@ -263,6 +265,7 @@ li > a:hover{
 
 .filter-effects > figure:hover{
     opacity: 0.5;
+    filter: alpha(opacity=50);
 
 }
 
@@ -304,13 +307,20 @@ h3{
     padding:1em;
 }
 #profile-picture-overlay > figure{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 #profile-picture-overlay {
     display: none;
     -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
     position: fixed;
     box-shadow:0 0 0 50vmax rgba(0,0,0,.8);
     top: 0;
@@ -322,13 +332,15 @@ h3{
     background: #84A49C;
     z-index: 20;
     margin: auto;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     cursor: url(images/cursor.cur), auto;
 }
 
 #profile-picture-overlay:target {
-    display: -webkit-box;      
-    display: -moz-box;         
+    display: -webkit-box;         
     display: -ms-flexbox;      
     display: -webkit-flex;     
     display: flex;            
@@ -336,7 +348,8 @@ h3{
 #find-friends{
     display:none;
     -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
     position: fixed;
     box-shadow:0 0 0 50vmax rgba(0,0,0,.8);
     top: 0;
@@ -348,7 +361,9 @@ h3{
     background: #84A49C;
     z-index: 20;
     margin: auto;
-    justify-content:space-around;
+    -webkit-justify-content:space-around;
+        -ms-flex-pack:distribute;
+            justify-content:space-around;
     height: 100%;
 }
 #find-friends header{
@@ -357,12 +372,14 @@ h3{
 }
 #find-friends > figure{
     margin: auto;
-    flex:15%;
+    -webkit-box-flex:15%;
+    -webkit-flex:15%;
+        -ms-flex:15%;
+            flex:15%;
     cursor:pointer;
 }
 #find-friends:target{
-    display: -webkit-box;      
-    display: -moz-box;         
+    display: -webkit-box;         
     display: -ms-flexbox;      
     display: -webkit-flex;     
     display: flex;  
@@ -373,7 +390,7 @@ h3{
 }
 
 
-input[type="checkbox"] + label::before {
+input[type="checkbox"] + label:before {
     content: '\a0'; 
     display: inline-block; 
     vertical-align: .2em; 
@@ -385,7 +402,7 @@ input[type="checkbox"] + label::before {
     text-indent: .15em; 
     line-height: .65; 
 }
-input[type="checkbox"]:checked + label::before {
+input[type="checkbox"]:checked + label:before {
     content: '\2713'; 
     background: #FFFFFF; 
 }
@@ -393,22 +410,28 @@ input[type="checkbox"] {
     position: absolute; 
     clip: rect(0,0,0,0); 
 }
-input[type="checkbox"]:focus + label::before {
+input[type="checkbox"]:focus + label:before {
     box-shadow: 0 0 .1em .1em #FFFFFF; 
 }
-input[type="checkbox"]:disabled + label::before {
+input[type="checkbox"]:disabled + label:before {
     background: gray; 
     box-shadow: none; 
     color: #FFFFFF; 
 }
-input[type="checkbox"]:focus + label::before {
+input[type="checkbox"]:focus + label:before {
     box-shadow: 0 0 .1em .1em #58a; 
 }
 
-input[type="checkbox"]:disabled + label::before {
+input[type="checkbox"]:disabled + label:before {
     background:gray; 
     box-shadow: none; 
     color: #555; 
+}
+
+@-webkit-keyframes loader {
+    to {
+             background-position: -800px 0; 
+    } 
 }
 
 @keyframes loader {
@@ -420,7 +443,8 @@ input[type="checkbox"]:disabled + label::before {
     width: 100px;
     height: 100px;
     background: url(images/loader.png) 0 0;
-    animation: loader 2s infinite steps(8);
+    -webkit-animation: loader 2s infinite steps(8);
+            animation: loader 2s infinite steps(8);
     text-indent: 200%;
     white-space: nowrap;
     overflow: hidden; 
