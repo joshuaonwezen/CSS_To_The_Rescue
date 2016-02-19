@@ -32,6 +32,11 @@ header{
     -ms-flex-direction:column;
     flex-direction:column;
 }
+header > figure{
+    border-bottom: 0.3em solid #4F625D;
+    border-right: 0.3em solid #4F625D;
+    height:200px;
+}
 #header{
     display: -webkit-box;
     display: -webkit-flex;
@@ -176,8 +181,13 @@ footer{
 footer > address{
     color:#FFFFFF;
 }
+footer pre{
+    text-align:center;
+}
 footer > ul{
-    margin-left:35%
+    margin-left:35%;
+    margin-top:0.5em;
+    margin-bottom:1em;
 }
 article{
     max-width:700px;
@@ -192,8 +202,17 @@ img{
     max-width:300px;
     max-height:300px;
 }
+a{
+    text-decoration: none;
+    color:#FFFFFF
+}
+li > a{
+    transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+}
 li > a:hover{
-    background-color: #000000;
+    opacity:0.5;
     cursor:pointer;    
 }
 
@@ -276,6 +295,7 @@ h3{
     border-radius: 50%;
     max-width: 500px;
     min-width: 200px;
+    max-height:200px;
 }
 #profile-picture-overlay a{
     text-decoration: none;
@@ -303,6 +323,7 @@ h3{
     z-index: 20;
     margin: auto;
     justify-content: center;
+    cursor: url(images/cursor.cur), auto;
 }
 
 #profile-picture-overlay:target {
@@ -328,7 +349,7 @@ h3{
     z-index: 20;
     margin: auto;
     justify-content:space-around;
-    height: 70%;
+    height: 100%;
 }
 #find-friends header{
     padding: 2em;
@@ -336,7 +357,7 @@ h3{
 }
 #find-friends > figure{
     margin: auto;
-    flex:20%;
+    flex:15%;
     cursor:pointer;
 }
 #find-friends:target{
@@ -405,8 +426,16 @@ input[type="checkbox"]:disabled + label::before {
     overflow: hidden; 
     margin:auto;
 }
-
-
+@media all and (min-width:380px){
+    #find-friends{
+        height:50%;
+    }
+}
+@media all and (min-width:600px){
+    #profile-picture-overlay {
+        width:50%; 
+    }
+}
 @media all and (min-width: 800px) {
     footer{
         border-top: none;
@@ -452,9 +481,7 @@ input[type="checkbox"]:disabled + label::before {
                 justify-content:flex-start;
         margin-left:2.5em;
     }
-    #profile-picture-overlay {
-        width:50%; 
-    }
+
     #find-friends{
         height:50%;
     }
